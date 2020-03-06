@@ -16,4 +16,14 @@ class PagesController extends AbstractController
             'controller_name' => 'PagesController',
         ]);
     }
+
+      /**
+     * @Route("/contact", name="contact")
+     */
+    public function contact()
+    {
+        return $this->render('pages/contact.html.twig', [
+            'controller_name' => 'PagesController',
+        ]);
+    }
 }
