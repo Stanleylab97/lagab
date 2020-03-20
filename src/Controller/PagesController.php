@@ -26,4 +26,15 @@ class PagesController extends AbstractController
             'controller_name' => 'PagesController',
         ]);
     }
+
+
+      /**
+     * @Route("/services", name="services")
+     */
+    public function services()
+    {
+        return $this->render('pages/services.html.twig', [
+            'controller_name' => 'PagesController',
+        ]);
+    }
 }
